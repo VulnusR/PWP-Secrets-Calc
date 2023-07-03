@@ -1,0 +1,72 @@
+header {
+    width: 100vw;
+    height: 10%;
+}
+
+.header-parent {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header-upper {
+    background-color: black;
+    
+    height: 30%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.header-time {
+    color: rgb(221, 14, 14);
+    padding-right: 1%;
+    font-size: medium;
+    font-style: italic;
+    letter-spacing: 0.175em;
+}
+
+.header-lower {
+    background-color: white;
+    height: 70%;
+    border-top: 2px solid goldenrod ;
+    border-bottom: 2px solid goldenrod ;
+    box-shadow: 1px 0px 3px 3px rgb(112, 111, 111);
+}
+
+.Nav-btn {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: transform 2s ease-in-out;
+}
+
+.Nav-btn-active {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: rgb(170, 10, 10);
+    font-size: large;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: transform 2s ease-in-out;
+}
+
+.Nav-btn-active:hover {
+    color: rgb(210, 137, 21);
+    transform: scale(1.8);
+    text-shadow: 5px 5px 8px 4px black;
+}
+
+.Nav-btn:hover {
+    color: rgb(210, 137, 21);
+    transform: scale(1.8);
+    text-shadow: 5px 5px 8px 4px black;
+}
