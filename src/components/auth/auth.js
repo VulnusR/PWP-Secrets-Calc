@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { handleAuthClick, handleSignoutClick, listMajors } from "./apiUtils";
+import { listMajors } from "./apiUtils";
+import { isUserAuthorized, redirectToMain } from './authHandler';
 
 const Auth = () => {
     const [tokenClient, setTokenClient] = useState(null);
@@ -53,10 +54,13 @@ const Auth = () => {
         if (resp.error !== undefined) {
           throw resp;
         }
-        document.getElementById('signout_button').style.visibility = 'visible';
+        
         document.getElementById('authorize_button').innerText = 'Refresh';
         await listMajors();
-      };
+        if (isUserAuthorized()) {
+            redirectToMain();
+        }
+    };
 
       if (window.gapi.client.getToken() === null) {
         // Prompt the user to select a Google Account and ask for consent to share their data
@@ -74,9 +78,7 @@ const Auth = () => {
       <button id="authorize_button" onClick={handleAuthClick}>
         Authorize
       </button>
-      <button id="signout_button" onClick={handleSignoutClick}>
-        Sign Out
-      </button>
+      
 
       <pre id="content" style={{ whiteSpace: 'pre-wrap' }}></pre>
     </div>
