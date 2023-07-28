@@ -50,6 +50,9 @@ async function listMajors() {
         spreadsheetId: '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
         range: 'Class Data!A2:E',
       });
+
+      console.log('Fetched data:', response.result); // Log the fetched data to the console
+      
     } catch (err) {
       document.getElementById('content').innerText = err.message;
       return;

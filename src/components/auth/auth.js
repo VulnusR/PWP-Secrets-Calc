@@ -3,7 +3,7 @@ import { listMajors } from "./apiUtils";
 import { isUserAuthorized, redirectToMain } from './authHandler';
 
 const Auth = () => {
-    const [tokenClient, setTokenClient] = useState(null);
+  const [tokenClient, setTokenClient] = useState(null);
 
   useEffect(() => {
     const CLIENT_ID = '550258123318-tembu4t1v0tdmc2v4fapb7q6cih03m3q.apps.googleusercontent.com';

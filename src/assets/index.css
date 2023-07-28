@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+
+  .refresh-btn {
+    height: 50%;
+    width: 55%;
+    border: black 1px solid;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(5, 5, 5, 0.357) 0px -5px 2px 3px inset;
+  }
+}
 
 /* Main */
     
@@ -85,6 +98,70 @@ body {
 /* Main End */
 
 /* Data */
+
+.page-title-container {
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.page-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: xx-large;
+  letter-spacing: 0.13em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.page-main-container {
+  height:80vh;
+  width: 100vw;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-content-parent{
+  height: 100%;
+  width: 85%;
+  background-color: rgb(235, 230, 230);
+  border: 2px solid goldenrod;
+  box-shadow: 5px 5px 25px 10px rgb(104, 103, 103);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+
+.data-content-top {
+  height: 15%;
+  width: 95%;
+  padding: 5px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+
+.data-content-lower {
+  height: 85%;
+  width: 95%;
+
+}
+
+
 
 .article-formatting {
 height: 100%;

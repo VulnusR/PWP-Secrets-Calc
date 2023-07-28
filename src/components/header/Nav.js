@@ -33,10 +33,10 @@ function Navbar() {
     return (
         
              <nav className="index-menu" style={{ listStyleType: 'none' }}>
-                <NavItem path="/Data" text="Data" />
-                <NavItem path="/Data" text="Assignments" />
-                <NavItem path="/Data" text="Operations" />
-                <NavItem path="/Data" text="History" />
+                <NavItem path="/PWP-Secrets_Calculator/Data" text="Data" />
+                <NavItem path="/PWP-Secrets_Calculator/Data" text="Assignments" />
+                <NavItem path="/PWP-Secrets_Calculator/Data" text="Operations" />
+                <NavItem path="/PWP-Secrets_Calculator/Data" text="History" />
               </nav>
         
     );
